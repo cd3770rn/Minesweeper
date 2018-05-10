@@ -2,6 +2,14 @@ package com.minesweeper;
 
 import javax.swing.*;
 
+/* === Main ===
+ * This is the Main class, which runs a new instance
+ * of Minesweeper GUI, and also sets the look and feel
+ * for the game.
+ *
+ * Written by Alex Mastin
+ */
+
 public class Main {
     public static MinesweeperGUI gui;
     public static void main(String[] args) {

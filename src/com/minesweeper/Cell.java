@@ -5,6 +5,27 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/* === Cell ===
+ * This class is where all the magic happens.
+ * Cell objects extend JButtons, so that they are easy
+ * to click on. This class contains a number of characteristics
+ * that you would expect a cell in Minesweeper to have.
+ *
+ * The cellCount variable keeps track of how many cells have
+ * been created, and the index variable exists as a non-static
+ * reference to cellCount that can be used to determine the
+ * equivalent row, col index value of a Cell object.
+ *
+ * A cell can be a bomb, and a cell can be cleared. By default,
+ * cells are not cleared. When the game is run, Cell objects
+ * are randomly selected to be bombs.
+ *
+ * Later on, the cell is assigned a bombCount if it has any
+ * adjacent mines.
+ *
+ * Written by Alex Mastin
+ */
+
 public class Cell extends JButton{
     private boolean isBomb;
     private boolean isCleared;

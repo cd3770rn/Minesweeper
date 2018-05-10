@@ -7,6 +7,16 @@ import java.awt.event.ActionListener;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+/* === MinesweeperGUI ===
+ * This class contains controls from the GUI Form as well
+ * as most of the methods needed to run the game. Action
+ * handlers for GUI elements are at the top, and below that
+ * is a number of methods for initializing the game and
+ * handling gameplay.
+ *
+ * Written by Alex Mastin
+ */
+
 public class MinesweeperGUI extends JFrame{
     private JPanel mainPanel;
     private JPanel mainMenu;
